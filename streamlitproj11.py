@@ -7,19 +7,19 @@ from PIL import Image
 import subprocess
 
 
-Facebook_platform = pd.read_csv("C:/Users/admin/Desktop/facebook_platform.csv")
-Facebook_age =  pd.read_csv("C:/Users/admin/Desktop/facebook_age.csv")
-Facebook_region =  pd.read_csv("C:/Users/admin/Desktop/facebook_region.csv")
+Facebook_platform = pd.read_csv("facebook_platform.csv")
+Facebook_age =  pd.read_csv("facebook_age.csv")
+Facebook_region =  pd.read_csv("facebook_region.csv")
 
 
-st.image(Image.open('C:/Users/admin/Desktop/semiannual.png'),width= 1800)
+st.image(Image.open('semiannual.png'),width= 1800)
 
 col1, col2, col3, col4 = st.beta_columns(4)
-image = Image.open('C:/Users/admin/Desktop/purchase.png')
-image2 = Image.open('C:/Users/admin/Desktop/add to cart.png')
-image3 = Image.open('C:/Users/admin/Desktop/r.png')
-image4 = Image.open('C:/Users/admin/Desktop/Dollar.png')
-image5= Image.open('C:/Users/admin/Desktop/Purchases vs Revenue Breakdown.png')
+image = Image.open('purchase.png')
+image2 = Image.open('add to cart.png')
+image3 = Image.open('r.png')
+image4 = Image.open('Dollar.png')
+image5= Image.open('Purchases vs Revenue Breakdown.png')
 with col1:
 	st.image(image, width= 140)
 	st.markdown("## Revenue")
@@ -66,7 +66,7 @@ fig = go.Figure()
 
 with open("C:/Users/admin/Desktop/style.css") as f:
 	st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
-	st.image(Image.open('C:/Users/admin/Desktop/Purchases vs Revenue Breakdown1.png'), width= 1800)
+	st.image(Image.open('Purchases vs Revenue Breakdown1.png'), width= 1800)
   
 if chart_visual == 'Category':
     if selected_kpi == 'Purchases':
@@ -145,7 +145,7 @@ elif chart_visual == 'Age Group':
 
 st.plotly_chart(fig, use_container_width=True)
 
-st.image(Image.open('C:/Users/admin/Desktop/Purchases vs Revenue Breakdown.png'),width= 1800)
+st.image(Image.open('Purchases vs Revenue Breakdown.png'),width= 1800)
 
 
 
