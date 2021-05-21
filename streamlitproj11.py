@@ -64,7 +64,7 @@ agep = Facebook_age.groupby(["Age"]).sum()["Purchases"]
 ager = Facebook_age.groupby(["Age"]).sum()["Purchases Conversion Value"]
 fig = go.Figure()
 
-with open("C:/Users/admin/Desktop/style.css") as f:
+with open("style.css") as f:
 	st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 	st.image(Image.open('Purchases vs Revenue Breakdown1.png'), width= 1800)
   
