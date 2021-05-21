@@ -5,6 +5,10 @@ import plotly.graph_objects as go
 import plotly.express as px
 from PIL import Image
 import subprocess
+st.set_page_config(
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 
 
 Facebook_platform = pd.read_csv("facebook_platform.csv")
